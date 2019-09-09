@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   color_hash = data[:color]
   color_hash.each do |key, value|
     value.each do |name|
-      if new_hash.key? (name) == false
+      if new_hash.key?(name) == false
       new_hash[name] = {:color => [], :gender => [], :lives => []}
       end
     new_hash[name][:color].push("#{key}")
@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
   gender_hash = data[:gender]
   gender_hash.each do |key, value|
     value.each do |name|
-      if new_hash.key? (name) == false
+      if new_hash.key?(name) == false
         new_hash[name] = {:color => [], :gender => [], :lives => []}
       end
       new_hash[name][:gender].push("#{key}")
@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
   lives_hash = data[:lives]
   lives_hash.each do |key, value|
     value.each do |name|
-      if new_hash.key? (name) == false
+      if new_hash.key?(name) == false
         new_hash[name] = {:color => [], :gender => [], :lives => []}
       end
       new_hash[name][:lives].push("#{key}")
