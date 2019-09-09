@@ -26,5 +26,5 @@ def nyc_pigeon_organizer(data)
       end
       new_hash[name][:lives].push("#{key}")
     end
-  
+  end
 end
